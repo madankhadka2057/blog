@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90vw;
+    min-height: 100vh;
+    background-color: #16181D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-section {
+    height: 100vh;
+    width: 20vw;
+    background-color: #0F1115;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin: 40px 15px 40px 0px;
+    overflow-y: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.about-section {
+    margin-left: 10px;
+    height: 100vh;
+    width: 50vw;
+    background-color: #0F1115;
+    box-sizing: border-box;
+    border-radius: 7px;
+    margin: 40px 20px 40px 0px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.scroll{
+    height: 90vh;
+    /* background-color: #5ff508; */
+    overflow-y: auto;
+}
+
+img {
+    margin-top: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.name {
+    margin-top: 5px;
+}
+
+.name h1 {
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    color: #ffff;
+}
+
+.text-green {
+    color: green;
+}
+
+.web-resume {
+    /* background-color: yellow; */
+    text-align: center;
+}
+
+.web-resume p {
+    color: #ffff;
+    /* height: 30px;
+    display: flex;
+    justify-items: center;
+    text-align: center; */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #16181D;
+    margin: 10px;
+}
+#download{
+    cursor: pointer;
+}
+
+.follow-item {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 40px 0px;
+}
+.follow-item a{
+    transition: all 0.3s ease-in;
+}
+.follow-item a:hover{
+    transform: translateY(-5px);
+}
+.follow-item svg {
+    /* background-color: #faeded; */
+    /* color: #faeded; */
+    font-size: 30px;
+    fill: #5ff508
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #16181D;
+    box-sizing: border-box;
+    margin: auto;
+    width: 95%;
+    border-radius: 5px;
+}
+
+.details p svg {
+    fill: #5ff508;
+    margin-right: 4px;
+}
+
+.details p {
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+    /* margin: 10px 0;
+    white-space: nowrap;*/
+}
+/* About-section!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.flex-nev{
+    /* background-color: #0F1115; */
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.about{
+    color: #ffff;
+    font-size: 30px;
+    border-bottom: 3px solid yellowgreen;
+}
+.resume-projects a{
+    color: #ffff;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 0px 10px;
+    /* transition: border-bottom 0.3s ease-in; */
+}
+.resume-projects a:hover{
+    border-bottom: 3px solid yellowgreen;
+}
+h3{
+    color: #ffff;
+    text-align: justify;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+}
+.my-skills{
+    margin: 20px;
+    /* background-color: #5ff508; */
+    box-sizing: border-box;
+}
+.my-skills h1{
+    margin: 10px;
+    color: rgb(134, 134, 211);
+}
+.skills{
+    /* background-color: #5ff508; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* flex-wrap: wrap; */
+}
+.skill-1{
+    min-height: 110px;
+    width: 48%;
+    border-radius: 7px;
+    /* background-color: #5ff508; */
+    background-color: #16181D;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    color: #ffff;
+    transition: all 0.3s;
+}
+.skill-1:hover{
+    scale: 1.03;
+}
+.skill-1 svg{
+    fill: rgb(221, 245, 7);
+    height: 40px;
+    margin-right: 6px;
+}
+@media (max-width:626px) {
+    body{
+        background-color: #16181D;
+    }
+    .container{
+        height: 100%;
+        width: 90vw;
+        display: block;
+        flex-direction: column;
+        /* background-color: #5ff508; */
+    }
+    .profile-section{
+        margin: auto;
+        width: 80vw;
+        margin-bottom: 5px;
+        height: 75vh;
+    }
+    .about-section{
+        margin: auto;
+        width: 80vw;
+        height: 100vh;
+    }
+}
+@media (max-width:434px){
+    .skills{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: row; */
+        /* background-color:aqua ; */
+    }
+    .skill-1{
+        width: 100%;
+    }
+}
+

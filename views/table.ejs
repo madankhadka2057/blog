@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            min-width: 40vw;
+            width: auto;
+            margin: 20px auto;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffff;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+        }
+
+        button {
+            color: #ffff;
+            background-color: black;
+            height: 30px;
+            /* width: 100px; */
+            border: 1px solid white;
+            border-radius: 4px;
+        }
+
+        th,
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            width: auto;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>User Table</h1>
+    <div class="btn">
+        <a href="/portfolio"><button type="button">See Portfolio</a></button></a>
+        <a href="/login"><button type="button">ADD USER</a></button></a>
+        <input type="search" name="search" id="search" onchange="handlechange()" placeholder="Search" />
+    </div>
+
+    <% if(data.length==0){%>
+        <h1>No Data Found</h1>
+        <%} else{%>
+            <table>
+                <tr>
+                    <th>S.N</th>
+                    <th>ID</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Action</th>
+                </tr>
+                <ul id="results"></ul>
+                <% data. map((allData,index)=>{ %>
+                    <tr>
+                        <td><%-index+1%></td>
+                        <td><%- allData.id %></td>
+                        <td><%- allData.username %></td>
+                        <td><%- allData.password %></td>
+                        <td>
+
+                            <a href="/update/<%- allData.id %>"><button type="button">Update</button></a>
+                            <a href="/delete/<%- allData.id %>"><button type="button">Delete</button></a>
+                        </td>
+                    </tr>
+                    <% })%>
+            </table>
+        <%}%>
+</body>
+
+</html>
