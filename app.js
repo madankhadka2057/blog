@@ -60,9 +60,6 @@ app.get("/delete/:id",async(req,res)=>{
     res.redirect("/")
 })
 
-
-
-
 app.listen(3001,()=>{
     console.log("Port is running in 3001");
 })
