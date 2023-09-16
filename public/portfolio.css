@@ -216,12 +216,13 @@ h3{
         width: 90vw;
         display: block;
         flex-direction: column;
+        margin: auto;
         /* background-color: #5ff508; */
     }
     .profile-section{
         margin: auto;
         width: 80vw;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
         height: 75vh;
     }
     .about-section{
