@@ -59,6 +59,9 @@
 </head>
 <body>
     <div class="login-container">
+        handleCancel=()=>{
+
+        }
         <h2>Login</h2>
         <form action="/login" method="post">
             <div class="form-group">
@@ -70,8 +73,19 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <button class="login-btn" type="submit">Login</button>
-            <button class="login-btn" type="button">Cancle</button>
+            <button class="login-btn" id="cancel-btn" type="button">Cancel</button>
         </form>
     </div>
+    <script>
+        // Function to handle the "Cancel" button click event
+        function handleCancel() {
+            // Redirect the user to the home page
+            window.location.href = "/"; // Replace "/" with the URL of your home page
+        }
+    
+        // Attach the click event handler to the "Cancel" button
+        document.getElementById("cancel-btn").addEventListener("click", handleCancel);
+    </script>
+    
 </body>
 </html>
