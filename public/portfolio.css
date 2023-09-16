@@ -231,6 +231,12 @@ h3{
     }
 }
 @media (max-width:434px){
+    .about {
+        font-size: 20px;
+    }
+    .resume-projects a {
+        font-size: 20px;
+    }
     .skills{
         display: flex;
         flex-wrap: wrap;
