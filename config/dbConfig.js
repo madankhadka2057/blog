@@ -1,8 +1,8 @@
 module.exports={
-    HOST:"localhost",
+    HOST:"jFRxw82nl6ye0JqNTmQF",
     USER:"root",
-    PASSWORD:"",
-    DB:"login",
+    PASSWORD:"jFRxw82nl6ye0JqNTmQF",
+    DB:"railway",
     dailect:"mysql",
     pool:{
         max:5,
