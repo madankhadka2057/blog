@@ -12,10 +12,10 @@
 //     }
 // }
 module.exports={
-    HOST:"localhost",
+    HOST:"containers-us-west-100.railway.app",
     USER:"root",
-    PASSWORD:"",
-    DB:"login",
+    PASSWORD:"eT0aYZMnfUrmW21IXOHJ",
+    DB:"railway",
     dailect:"mysql",
     pool:{
         max:5,
